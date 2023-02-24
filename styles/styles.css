@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+/*---------------------*/
+.header {
+  width: 100%;
+  min-height: 249px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .header .menu {
+    flex: 1 1 100%;
+    min-height: 50px;
+    background: #efefef;
+    align-items: center; }
+    .header .menu .menu__container {
+      max-width: 1110px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 17px 0 16px 0; }
+      @media screen and (max-width: 463px) {
+        .header .menu .menu__container {
+          padding-bottom: 6px; } }
+      @media screen and (max-width: 463px) {
+        .header .menu .menu__container .menu__item {
+          margin: 0 10px !important;
+          margin-bottom: 10px !important; } }
+      .header .menu .menu__container .menu__item > a {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #333333; }
+      .header .menu .menu__container .menu__item:not(:last-child) {
+        margin-right: 30px; }
+  .header .header__middle {
+    min-height: 120px;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1 1 100%; }
+    @media screen and (max-width: 621px) {
+      .header .header__middle {
+        justify-content: center; } }
+    @media screen and (max-width: 621px) {
+      .header .header__middle > div {
+        margin: 0 10px;
+        margin-bottom: 20px; } }
+    .header .header__middle .header__logo-items {
+      display: flex;
+      width: 258px;
+      align-items: center; }
+      @media screen and (max-width: 621px) {
+        .header .header__middle .header__logo-items {
+          margin-top: 20px; } }
+      .header .header__middle .header__logo-items .header__logo {
+        margin-right: 20px; }
+      .header .header__middle .header__logo-items .header__name {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        color: #66c05d;
+        letter-spacing: 0.1em; }
+    .header .header__middle .header__contacts {
+      display: flex;
+      max-width: 347px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .header .header__middle .header__contacts .header__phone {
+        margin-right: 40px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000; }
+        @media screen and (max-width: 359px) {
+          .header .header__middle .header__contacts .header__phone {
+            margin: 0 20px; } }
+      .header .header__middle .header__contacts .header__call {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000;
+        padding: 10px 26px;
+        border: 2px solid #66c05d;
+        border-radius: 40px;
+        background: #ffffff; }
+  .header .sub-menu {
+    min-height: 79px;
+    flex: 1 1 100%;
+    align-items: center;
+    border-top: 1px solid #efefef; }
+    .header .sub-menu .sub-menu__container {
+      max-width: 1110px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 0; }
+      @media screen and (max-width: 591px) {
+        .header .sub-menu .sub-menu__container {
+          padding-bottom: 20px; } }
+      @media screen and (max-width: 692px) {
+        .header .sub-menu .sub-menu__container .sub-menu__item {
+          margin: 0 10px !important; } }
+      @media screen and (max-width: 591px) {
+        .header .sub-menu .sub-menu__container .sub-menu__item {
+          margin-bottom: 10px !important; } }
+      .header .sub-menu .sub-menu__container .sub-menu__item > a {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000; }
+      .header .sub-menu .sub-menu__container .sub-menu__item:not(:last-child) {
+        margin-right: 40px; }
+
+.main {
+  width: 100%;
+  min-height: calc(100vh - 473px); }
+  .main .banner {
+    width: 100%;
+    background: #66c05d;
+    z-index: -1; }
+    .main .banner .banner__container {
+      max-width: 1110px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center; }
+      @media screen and (max-width: 1110px) {
+        .main .banner .banner__container > div {
+          margin: 0 10px; } }
+      @media screen and (max-width: 750px) {
+        .main .banner .banner__container {
+          flex-direction: column; } }
+      .main .banner .banner__container .banner__description {
+        max-width: 308px;
+        margin-right: 12px; }
+        @media screen and (max-width: 750px) {
+          .main .banner .banner__container .banner__description {
+            text-align: center;
+            margin-bottom: 30px; } }
+        .main .banner .banner__container .banner__description .banner__header {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 56px;
+          color: #fff;
+          margin-bottom: 50px; }
+        .main .banner .banner__container .banner__description .banner__text {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #fff;
+          margin-bottom: 50px; }
+        .main .banner .banner__container .banner__description .banner__btn-show-more {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #fff;
+          padding: 13px 26px;
+          background: #66c05d;
+          border: 2px solid #ffffff;
+          border-radius: 40px;
+          width: 170px; }
+      .main .banner .banner__container .banner__photo {
+        min-width: 250px;
+        position: relative;
+        flex: 1 1;
+        text-align: center;
+        overflow: hidden;
+        background: url(../img/hugeCircle.svg) no-repeat center, url(../img/circle.svg) no-repeat center; }
+        .main .banner .banner__container .banner__photo > img {
+          position: relative;
+          max-width: 584px;
+          width: 100%;
+          height: auto;
+          z-index: 100; }
+  .main .special-offers {
+    width: 100%;
+    min-height: 954px;
+    background-color: #efefef;
+    padding-top: 70px; }
+    .main .special-offers .special-offers__container {
+      max-width: 1110px;
+      margin: 0 auto; }
+      .main .special-offers .special-offers__container .special-offers__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 16.5px; }
+        @media screen and (max-width: 524px) {
+          .main .special-offers .special-offers__container .special-offers__header {
+            justify-content: center; } }
+        .main .special-offers .special-offers__container .special-offers__header > h2 {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          color: #000; }
+          @media screen and (max-width: 524px) {
+            .main .special-offers .special-offers__container .special-offers__header > h2 {
+              text-align: center;
+              margin: 0 10px;
+              flex: 1 1 100%;
+              margin-bottom: 15px; } }
+        @media screen and (max-width: 524px) {
+          .main .special-offers .special-offers__container .special-offers__header > img {
+            margin: 0 10px; } }
+      .main .special-offers .special-offers__container .offers-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px; }
+        @media screen and (max-width: 1109px) {
+          .main .special-offers .special-offers__container .offers-row {
+            margin-bottom: 50px; } }
+        .main .special-offers .special-offers__container .offers-row .offers-row__item {
+          height: 363px;
+          width: 255px;
+          background-color: #fff;
+          text-align: center; }
+          @media screen and (max-width: 1109px) {
+            .main .special-offers .special-offers__container .offers-row .offers-row__item {
+              margin: 0 15px !important;
+              margin-bottom: 30px !important; } }
+          .main .special-offers .special-offers__container .offers-row .offers-row__item:not(:last-child) {
+            margin-right: 30px; }
+          .main .special-offers .special-offers__container .offers-row .offers-row__item > img {
+            margin: 25px 65px 20px 65px; }
+          .main .special-offers .special-offers__container .offers-row .offers-row__item .offers-row__description {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333;
+            margin-bottom: 20px; }
+          .main .special-offers .special-offers__container .offers-row .offers-row__item .offers-row__price {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 25px;
+            color: #000;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px; }
+          .main .special-offers .special-offers__container .offers-row .offers-row__item .offers-row__btn-buy {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #fff;
+            padding: 9px 40px;
+            background: #66c05d;
+            border-radius: 30px;
+            letter-spacing: 0.05em; }
+      .main .special-offers .special-offers__container .sub-information {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; }
+        .main .special-offers .special-offers__container .sub-information .sub-information__bonuses {
+          flex: 0 1 50%;
+          margin-right: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #66c05d;
+          max-width: 540px;
+          min-height: 215px; }
+          @media screen and (max-width: 1109px) {
+            .main .special-offers .special-offers__container .sub-information .sub-information__bonuses {
+              margin-right: 0;
+              flex: 1 1 100%;
+              margin: 0 10px 30px 10px; } }
+          @media screen and (max-width: 560px) {
+            .main .special-offers .special-offers__container .sub-information .sub-information__bonuses {
+              flex-wrap: wrap;
+              text-align: center; } }
+          .main .special-offers .special-offers__container .sub-information .sub-information__bonuses .sub-information__left-bar {
+            margin: 35px 40px; }
+            @media screen and (max-width: 560px) {
+              .main .special-offers .special-offers__container .sub-information .sub-information__bonuses .sub-information__left-bar {
+                order: 2;
+                margin: 35px 10px; } }
+            .main .special-offers .special-offers__container .sub-information .sub-information__bonuses .sub-information__left-bar .sub-information__header {
+              font-family: "Roboto";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 21px;
+              color: #fff;
+              margin-bottom: 25px; }
+            .main .special-offers .special-offers__container .sub-information .sub-information__bonuses .sub-information__left-bar .sub-information__text {
+              font-family: "Roboto";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20px;
+              color: #fff;
+              margin-bottom: 25px; }
+            .main .special-offers .special-offers__container .sub-information .sub-information__bonuses .sub-information__left-bar > input {
+              padding: 9px 104px 9px 25px;
+              background: #ffffff;
+              border-radius: 30px;
+              font-family: "Roboto";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 16px;
+              color: #c4c4c4; }
+          .main .special-offers .special-offers__container .sub-information .sub-information__bonuses .sub-information__envelope {
+            margin-right: 45px; }
+            @media screen and (max-width: 560px) {
+              .main .special-offers .special-offers__container .sub-information .sub-information__bonuses .sub-information__envelope {
+                order: 1;
+                margin-right: 0;
+                margin-top: 20px; } }
+        .main .special-offers .special-offers__container .sub-information .sub-information__invitation {
+          flex: 0 1 50%;
+          background-color: #66c05d;
+          max-width: 540px;
+          min-height: 215px;
+          padding: 35px 40px; }
+          @media screen and (max-width: 1109px) {
+            .main .special-offers .special-offers__container .sub-information .sub-information__invitation {
+              flex: 1 1 100%;
+              margin: 0 10px 30px 10px; } }
+          @media screen and (max-width: 560px) {
+            .main .special-offers .special-offers__container .sub-information .sub-information__invitation {
+              text-align: center; } }
+          .main .special-offers .special-offers__container .sub-information .sub-information__invitation .sub-information__header {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            color: #fff;
+            margin-bottom: 25px; }
+          .main .special-offers .special-offers__container .sub-information .sub-information__invitation .sub-information__text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #fff;
+            margin-bottom: 25px; }
+          .main .special-offers .special-offers__container .sub-information .sub-information__invitation .sub-information__map {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #fff;
+            padding: 9px 28px;
+            background: #66c05d;
+            border: 2px solid #ffffff;
+            border-radius: 30px; }
+
+.footer {
+  width: 100%;
+  min-height: 184px; }
+  .footer .footer__container {
+    max-width: 1110px;
+    margin: 40px auto; }
+    .footer .footer__container .footer-main {
+      min-height: 120px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; }
+      @media screen and (max-width: 896px) {
+        .footer .footer__container .footer-main {
+          justify-content: center; } }
+      .footer .footer__container .footer-main .footer-main__icons {
+        display: flex;
+        align-items: center;
+        width: 251px;
+        height: 55px; }
+        @media screen and (max-width: 896px) {
+          .footer .footer__container .footer-main .footer-main__icons {
+            margin-bottom: 20px; } }
+        .footer .footer__container .footer-main .footer-main__icons .footer-main__icon-container {
+          cursor: pointer;
+          display: inline-block;
+          text-align: center;
+          background: #ffffff;
+          border: 2px solid #66c05d;
+          border-radius: 50%;
+          width: 45px;
+          height: 45px; }
+          .footer .footer__container .footer-main .footer-main__icons .footer-main__icon-container:not(:last-child) {
+            margin-right: 20px; }
+          .footer .footer__container .footer-main .footer-main__icons .footer-main__icon-container > img {
+            padding-top: 12px; }
+      .footer .footer__container .footer-main .footer-main__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000; }
+        @media screen and (max-width: 645px) {
+          .footer .footer__container .footer-main .footer-main__contacts {
+            justify-content: center;
+            min-height: 80px; } }
+        @media screen and (max-width: 379px) {
+          .footer .footer__container .footer-main .footer-main__contacts > p {
+            margin-bottom: 10px; } }
+        .footer .footer__container .footer-main .footer-main__contacts .footer-main__phone {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #000;
+          margin-left: 40px;
+          margin-right: 40px; }
+        .footer .footer__container .footer-main .footer-main__contacts .footer-main__call {
+          background: #ffffff;
+          border: 2px solid #66c05d;
+          border-radius: 40px;
+          padding: 13px 26px; }
+  .footer .sub-footer {
+    width: 100%;
+    background: #efefef; }
+    .footer .sub-footer .sub-footer__container {
+      max-width: 1110px;
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; }
+      @media screen and (max-width: 804px) {
+        .footer .sub-footer .sub-footer__container {
+          justify-content: center; } }
+      .footer .sub-footer .sub-footer__container > p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #828282;
+        margin: 10px; }
+        @media screen and (max-width: 804px) {
+          .footer .sub-footer .sub-footer__container > p {
+            text-align: center; } }
